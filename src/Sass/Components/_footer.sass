@@ -1,0 +1,41 @@
+.footer
+    font-family: "Enigma"
+    font-size: 12px
+    background: $backgroundcolorFont
+    padding: 50px 0px
+    margin: 0px 10px
+    width: 100%
+    display: flex
+    gap: 10px
+
+.footer a
+    text-decoration: none
+    color: $fontcolor
+    margin: 0px 5px
+
+.pushRight
+    margin-left: 20px
+    font-family: $font-text
+    cursor: pointer
+    width: 80px
+
+.hover-underline-animation-footer
+    position: relative
+    color: #ffffff
+    padding-bottom: 20px
+
+.hover-underline-animation-footer:after
+    content: ""
+    position: absolute
+    width: 100%
+    transform: scaleX(0)
+    height: 2px
+    bottom: 18px
+    left: 0
+    background-color: #ffffff
+    transform-origin: bottom right
+    transition: transform 0.55s ease-out
+
+.line:hover .hover-underline-animation-footer:after
+    transform: scaleX(1)
+    transform-origin: bottom left
