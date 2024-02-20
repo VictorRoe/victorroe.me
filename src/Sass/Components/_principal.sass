@@ -1,20 +1,62 @@
+// Menu 
+
+.menu
+    position: fixed
+    width: 100%
+    z-index: 1
+
+.flex-nav
+    display: flex
+    top: 6vh
+    position: relative
+    gap: 170px
+    justify-content: center
+
+.logo
+    height: 20px
+    z-index: -1
+
+.btn-nav
+    z-index: 5
+
+.nav-container
+    display: flex
+    position: relative
+    top: 30vh
+    gap: 20px
+    flex-direction: column
+    align-items: center
+
+nav
+    display: flex
+
+aside
+    background-color: $backgroundcolorFont
+    width: 18.75rem
+    height: 100vh
+    position: fixed
+
+.nav-container a
+    color: $fontcolor
+    text-decoration: none
+    font-size: 1.75rem
+    font-weight: 600px
+    display: block
+    margin: 20px
+    font-family: "Enigma"
+
 .container
     display: flex
     flex-direction: column
     position: relative
-    top: 3vh
+    bottom: 9.5vh
+    gap: 9.2rem
 
-.flex-nav
-    display: flex
-    position: fixed
-    top: 6vh
-    gap: 50px
+.container-1
+    display: block
 
-.logo
-    height: 15px
-
-.menu
-    height: 15px
+.container-2
+    display: block
 
 .tittle
     font-family: "HUMANE"
@@ -43,7 +85,12 @@
     padding: 0px
 
 .scroll
+    margin: auto
+    display: flex
     font-family: "Enigma"
-    position: relative
-    top: 60vw
-    text-align: center
+
+button
+    border: none
+    outline: none
+    cursor: pointer
+    background-color: transparent

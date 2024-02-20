@@ -9,11 +9,11 @@ import { Footer } from "./components/Footer.tsx";
 function App() {
   return (
     <>
-      <div className="responsive">
+      <div className="responsive" id="pico">
         <Principal />
-        <div className="divisor"></div>
+        <div className="divisor" id="about"></div>
         <AboutMe />
-        <div className="divisor"></div>
+        <div className="divisor" id="contact"></div>
         <ContactMe />
         <Footer />
       </div>
