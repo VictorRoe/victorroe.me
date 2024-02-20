@@ -125,8 +125,8 @@ export const Principal: React.FC = () => {
           </AnimatePresence>
         </nav>
         <div className="flex-nav">
-          <img className="logo" src={isMobile} alt="logo" />
           <MenuToggle toggle={() => toggleOpen()} />
+          <img className="logo" src={isMobile} alt="logo" />
         </div>
       </motion.div>
       <main className="container">

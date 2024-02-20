@@ -2,19 +2,21 @@
     font-family: "Enigma"
     font-size: 11px
     background: $backgroundcolorFont
-    padding: 50px 0px
-    margin: 0px 10px
     width: 100%
     display: flex
+    flex-direction: row
+    padding: 50px 0px
 
-.footer a
-    text-decoration: none
+.footer span
     color: $fontcolor
     margin: 0px 10px
 
+.footer a
+    text-decoration: none
+
 .pushRight
-    margin-left: 20px
     font-family: $font-text
+    margin-left: 40px
     cursor: pointer
     width: 80px
 
@@ -38,3 +40,13 @@
 .line:hover .hover-underline-animation-footer:after
     transform: scaleX(1)
     transform-origin: bottom left
+
+@media only screen and (min-device-width: 768px) and (max-width: 1200px) and (orientation: landscape)
+    .footer
+        font-size: 15px
+
+    .footer span
+        margin-left: 40px
+
+    .pushRight
+        margin-left: 430px
