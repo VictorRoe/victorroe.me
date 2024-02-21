@@ -41,6 +41,8 @@
     transform: scaleX(1)
     transform-origin: bottom left
 
+// Responsive horizontal tablet
+
 @media only screen and (min-device-width: 768px) and (max-width: 1200px) and (orientation: landscape)
     .footer
         font-size: 15px
@@ -50,3 +52,22 @@
 
     .pushRight
         margin-left: 430px
+
+    .hover-underline-animation-footer:after
+        height: 3px
+
+// Responsive vertical tablet
+
+@media only screen and (min-device-width: 768px) and (max-width: 1200px) and (orientation: portrait)
+    .footer
+        font-size: 18px
+
+    .footer span
+        margin-left: 30px
+
+    .pushRight
+        margin-left: 90px
+        width: 150px
+
+    .hover-underline-animation-footer:after
+        height: 3px
