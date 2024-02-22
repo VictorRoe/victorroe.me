@@ -42,7 +42,6 @@ aside
     color: $fontcolor
     text-decoration: none
     font-size: 1.75rem
-    font-weight: 600px
     display: block
     margin: 20px
     font-family: "Enigma"
@@ -76,7 +75,7 @@ aside
     gap: 20px
 
 .arrow
-    height: 4rem
+    height: 4em
 
 .roles
     font-family: "Enigma"
@@ -87,10 +86,11 @@ aside
     padding: 0px
 
 .scroll
-    margin: auto
-    display: flex
-    position: relative
-    font-family: "Enigma"
+    display: none
+    // margin: auto
+    // position: relative
+    // bottom: 100%
+    // font-family: "Enigma"
 
 button
     border: none
@@ -122,12 +122,15 @@ button
         font-size: 1.1rem
         margin-top: 6.4vh
 
+    .flex-arr-rol
+        top: 6em
+z
     .scroll
         display: none
 
 // responsive vertical tablet 
 
-@media only screen and (min-device-width: 768px) and (max-width: 1200px) and (orientation: portrait)
+@media only screen and (min-device-width: 568px) and (max-width: 1200px) and (orientation: portrait)
 
     .flex-nav
         gap: 320px

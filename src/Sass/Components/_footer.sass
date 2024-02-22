@@ -4,6 +4,7 @@
     background: $backgroundcolorFont
     width: 100%
     display: flex
+    justify-content: center
     flex-direction: row
     padding: 50px 0px
 
@@ -13,10 +14,11 @@
 
 .footer a
     text-decoration: none
+    height: 0px
 
 .pushRight
     font-family: $font-text
-    margin-left: 40px
+    margin-left: 20px
     cursor: pointer
     width: 80px
 
@@ -51,16 +53,16 @@
         margin-left: 40px
 
     .pushRight
-        margin-left: 430px
+        margin-left: 30px
 
     .hover-underline-animation-footer:after
         height: 3px
 
 // Responsive vertical tablet
 
-@media only screen and (min-device-width: 768px) and (max-width: 1200px) and (orientation: portrait)
+@media only screen and (min-device-width: 568px) and (max-width: 1200px) and (orientation: portrait)
     .footer
-        font-size: 18px
+        font-size: 15px
 
     .footer span
         margin-left: 30px
