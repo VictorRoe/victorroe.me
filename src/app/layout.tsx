@@ -20,7 +20,17 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "WELCOME TO MY WORLD",
-  description: "Victor Roe's Portfolio",
+  description: "Victor Roe's Website",
+  keywords: ["Victor Roe", "Victor Rangel", "Victor Jose Rangel Romero", "Victor Rangel Romero Portfolio", "Victor Rangel Romero Projects", "Victor Rangel Romero About me", "Victor Rangel Romero Contact", "Victor Rangel Romero GitHub", "Victor Rangel Romero LinkedIn", "Victor Rangel Romero Email"],
+  authors: [{ name: "Victor Jose Rangel Romero", url: "https://www.victorroe.com" }],
+  openGraph: {
+    title: "WELCOME TO MY WORLD",
+    description: "Victor Roe's Website",
+    url: "https://www.victorroe.com",
+    siteName: "Victor Roe's Website",
+    images: "/graph.png",
+  },
+  metadataBase: new URL('https://www.victorroe.com'),
 };
 
 export default function RootLayout({
