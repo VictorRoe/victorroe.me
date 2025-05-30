@@ -11,14 +11,14 @@ export const Dock = () => {
   const containerRef = useRef<HTMLDivElement>(null)
 
   const menuItems = [
-    { id: "proyectos", label: "Proyectos", icon: FolderKanban, href: "#proyectos" },
-    { id: "sobre-mi", label: "Sobre mí", icon: User, href: "#sobre-mi" },
+    { id: "proyectos", label: "Projects", icon: FolderKanban, href: "#proyectos" },
+    { id: "sobre-mi", label: "About me", icon: User, href: "#sobre-mi" },
   ]
 
   const contactItems = [
-    { id: "github", label: "GitHub", icon: Github, href: "https://github.com/username" },
-    { id: "linkedin", label: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/username" },
-    { id: "email", label: "Email", icon: Mail, href: "mailto:tu@email.com" },
+    { id: "github", label: "GitHub", icon: Github, href: "https://github.com/VictorRoe" },
+    { id: "linkedin", label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/victorrangelromero/" },
+    { id: "email", label: "Email", icon: Mail, href: "mailto:victorrangele819@gmail.com?subject=Hello%20I%20want%20to%20work%20with%20you!" },
   ]
 
   const updateBadgePosition = (element: HTMLElement) => {
