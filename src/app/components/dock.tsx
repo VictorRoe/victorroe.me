@@ -25,8 +25,9 @@ export const Dock = () => {
     if (containerRef.current) {
       const containerRect = containerRef.current.getBoundingClientRect()
       const elementRect = element.getBoundingClientRect()
-      const left = elementRect.left - containerRect.left + elementRect.width / 2
-      setBadgeStyle({ left, opacity: 1 })
+      const relativeLeft = elementRect.left - containerRect.left
+      const centerPosition = relativeLeft + elementRect.width / 2
+      setBadgeStyle({ left: centerPosition, opacity: 1 })
     }
   }
 
@@ -46,9 +47,8 @@ export const Dock = () => {
         ref={containerRef}
         className="relative bg-black/80 backdrop-blur-md rounded-2xl p-1 flex items-center shadow-lg border border-white/10"
       >
-        {/* Badge dinámico */}
         <div
-          className="absolute -top-8 bg-black/90 backdrop-blur-md text-white text-sm px-3 py-1 rounded-lg border border-white/10 pointer-events-none transition-all duration-300 ease-out transform -translate-x-1/2"
+          className="absolute -top-8 bg-black/90 backdrop-blur-md text-white text-sm px-3 py-1 rounded-lg border border-white/10 pointer-events-none transition-all duration-300 ease-out whitespace-nowrap"
           style={{
             left: badgeStyle.left,
             opacity: badgeStyle.opacity,
@@ -61,10 +61,8 @@ export const Dock = () => {
                 contactItems.find((item) => item.id === hoveredItem)?.label}
             </>
           )}
-          {/* Flecha del tooltip */}
         </div>
 
-        {/* Indicador de disponibilidad */}
         <div className="flex items-center px-4 border-r border-white/10">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
@@ -72,7 +70,6 @@ export const Dock = () => {
           </div>
         </div>
 
-        {/* Secciones principales */}
         <div className="flex items-center px-6 py-3 gap-4">
           {menuItems.map((item) => (
             <Link
@@ -86,7 +83,6 @@ export const Dock = () => {
             </Link>
           ))}
 
-          {/* Contactos */}
           <div className="flex items-center gap-3 pl-6 border-l border-white/10">
             {contactItems.map((item) => (
               <Link
